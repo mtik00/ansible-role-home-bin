@@ -3,8 +3,14 @@
 
 - name: Verify
   hosts: all
-  gather_facts: false
+  gather_facts: true
   tasks:
-    - name: Example assertion
-      ansible.builtin.assert:
-        that: true
+    - name: Check gpgtar
+      block:
+        - name: register gpgtar
+          ansible.builtin.stat:
+            path: "{{ ansible_user_dir }}/bin/gpgtar"
+          register: gpgtar
+        - name: gpgtar exists
+          ansible.builtin.assert:
+            that: gpgtar.stat.exists
