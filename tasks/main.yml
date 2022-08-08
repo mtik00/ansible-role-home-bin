@@ -1,1 +1,9 @@
 ---
+
+- name: home bin files
+  ansible.builtin.copy:
+    src: files/bin/
+    dest: "{{ ansible_user_dir }}/bin"
+    owner: "{{ ansible_user_id }}"
+    group: "{{ ansible_user_id }}"
+    mode: 0755
