@@ -1,3 +1,13 @@
+## 0.3.0 (2023-04-04)
+
+### Feat
+
+- adding randuuid script
+
+### Refactor
+
+- change dependency name
+
 ## 0.2.0 (2022-08-07)
 
 ### Feat
