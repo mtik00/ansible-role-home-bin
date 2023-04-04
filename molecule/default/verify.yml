@@ -7,10 +7,10 @@
   tasks:
     - name: Check gpgtar
       block:
-        - name: register gpgtar
+        - name: Register gpgtar
           ansible.builtin.stat:
             path: "{{ ansible_user_dir }}/bin/gpgtar"
           register: gpgtar
-        - name: gpgtar exists
+        - name: Assert gpgtar exists
           ansible.builtin.assert:
             that: gpgtar.stat.exists

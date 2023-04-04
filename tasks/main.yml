@@ -1,6 +1,6 @@
 ---
 
-- name: home bin files
+- name: Copy home bin files
   ansible.builtin.copy:
     src: files/bin/
     dest: "{{ ansible_user_dir }}/bin"
