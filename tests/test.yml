@@ -1,5 +1,6 @@
 ---
 - hosts: localhost
+  name: Test play
   remote_user: root
   roles:
-    - home_bin
+    - mtik00.home_bin
