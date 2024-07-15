@@ -1,3 +1,16 @@
+## 0.4.0 (2024-07-15)
+
+### Feat
+
+- adding "betterenv" script
+- adding randuuid script
+- adding tasks
+- initial checkin
+
+### Refactor
+
+- change dependency name
+
 ## 0.3.0 (2023-04-04)
 
 ### Feat
